@@ -83,19 +83,31 @@ function App() {
                 key={index}
               >
                 <div className="label">
-                  <div className="orderContainer">
-                    <text className="listOrder">{index + 1}</text>
-                    <div
-                      style={{
-                        backgroundColor: "#603EBE",
-                        width: "17px",
-                        height: "4px",
-                        borderRadius: "4px",
-                        flexShrink: 0,
-                      }}
-                    ></div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div className="orderContainer">
+                      <text className="listOrder">0{index + 1}</text>
+                      <div
+                        style={{
+                          backgroundColor:
+                            index === playerData.length - 1
+                              ? "#FFFFFF"
+                              : "#603EBE",
+                          width: "17px",
+                          height: "4px",
+                          borderRadius: "4px",
+                          flexShrink: 0,
+                        }}
+                      ></div>
+                    </div>
+                    {data.header}
                   </div>
-                  {data.header}
+
                   <div
                     className="description"
                     style={{
@@ -128,7 +140,40 @@ function App() {
                 key={index}
               >
                 <div className="label">
-                  {index + 1} {data.header}
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div className="orderContainer">
+                      <text
+                        className="listOrder"
+                        style={{
+                          color:
+                            index === playerData.length - 1
+                              ? "#8F6BE8"
+                              : "black",
+                        }}
+                      >
+                        0{index + 1}
+                      </text>
+                      <div
+                        style={{
+                          backgroundColor:
+                            index === playerData.length - 1
+                              ? "#FFFFFF"
+                              : "#603EBE",
+                          width: "17px",
+                          height: "4px",
+                          borderRadius: "4px",
+                          flexShrink: 0,
+                        }}
+                      ></div>
+                    </div>
+                    {data.header}
+                  </div>
                   <div
                     className="description"
                     style={{
@@ -174,7 +219,7 @@ function App() {
                       }}
                     >
                       <div className="orderContainer">
-                        <text className="listOrder">{index + 1}</text>
+                        <text className="listOrder">0{index + 1}</text>
                         <div
                           style={{
                             backgroundColor: "#603EBE",
@@ -224,7 +269,7 @@ function App() {
                       }}
                     >
                       <div className="orderContainer">
-                        <text className="listOrder">{index + 1}</text>
+                        <text className="listOrder">0{index + 1}</text>
                         <div
                           style={{
                             backgroundColor: "#603EBE",
