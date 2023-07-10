@@ -1,0 +1,377 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 320px) {
+  .App-header {
+    justify-content: flex-start;
+  }
+}
+
+.athlete {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto";
+  width: 100%;
+
+  .header {
+    color: #e7e7e7;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 1008px;
+    margin-top: 24px;
+    margin-right: 195px;
+  }
+
+  .image {
+    max-width: 678px;
+    margin-top: 35px;
+    margin-left: 175px;
+    position: absolute;
+    width: auto;
+    height: auto;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+  }
+
+  .description {
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 21px;
+    max-width: 717px;
+  }
+  .label {
+    color: #c2c2c2;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-left: 1008px;
+    margin-right: 195px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .athlete .header {
+    font-size: 60px;
+    margin-left: 45%;
+  }
+
+  .athlete .label {
+    margin-left: 45%;
+  }
+  .athlete .image {
+    margin-left: -125px;
+    max-width: 65%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .athlete .header {
+    font-size: 60px;
+    margin-left: 300px;
+    margin-top: 81px;
+  }
+  .athlete .label {
+    margin-left: 300px;
+    margin-right: 20px;
+    padding: 30px 0;
+  }
+  .athlete .image {
+    margin-left: 0px;
+    max-width: 498px;
+    margin-top: 121px;
+    object-fit: cover;
+    object-position: -150px 0;
+  }
+  .athlete .description {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .athlete {
+    display: none;
+  }
+}
+
+.player {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto";
+  width: 100%;
+
+  .image {
+    max-width: 991px;
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    height: auto;
+    margin-right: 125px;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+  }
+
+  .header {
+    color: #e7e7e7;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 124px;
+    margin-left: 320px;
+  }
+
+  .label {
+    color: #c2c2c2;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-left: 320px;
+  }
+
+  .description {
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 21px;
+    max-width: 717px;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+
+  .player .header {
+    margin-top: 51px;
+  }
+  
+  .player .image {
+    max-width: 691px;
+    right: -10%;
+  }
+  .player .description {
+    font-size: 18px;
+    max-width: 432px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .player .header {
+    margin-top: 51px;
+    margin-left: 31px;
+  }
+  .player .label {
+    margin-left: 31px;
+  }
+  .player .image {
+    max-width: 691px;
+    right: 0px;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    object-position: 100px 0;
+    margin-right: 0;
+  }
+  .player .description {
+    font-size: 18px;
+    max-width: 432px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .player {
+    max-width: 768px;
+  }
+  .player .header {
+    margin-left: 31px;
+    margin-top: 51px;
+  }
+  .player .label {
+    margin-left: 31px;
+    padding: 30px 0;
+  }
+  .player .image {
+    max-width: none;
+    right: 0px;
+    margin-top: 33px;
+    width: 691px;
+    height: 568px;
+    object-fit: cover;
+    object-position: 255px 0;
+    margin-right: 0px;
+  }
+  .player .description {
+    font-size: 18px;
+    max-width: 432px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .player {
+    display: none;
+  }
+}
+
+.container-athlete {
+  width: 100%;
+  display: none;
+
+  .orderContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .listOrder {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+  }
+
+  .header {
+    color: #e7e7e7;
+    font-family: "Roboto";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .label {
+    color: #c2c2c2;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-top: 37px;
+  }
+
+  .description {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container-athlete {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-athlete .image {
+    max-width: 200px;
+    margin: 11px 0px 17px;
+    z-index: 99;
+  }
+}
+
+.item {
+  max-width: 284px;
+  margin: 0px 18px;
+}
+
+.container-player {
+  width: 100%;
+  display: none;
+
+  .orderContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .listOrder {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+  }
+
+  .header {
+    color: #e7e7e7;
+    font-family: "Roboto";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .label {
+    color: #c2c2c2;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-top: 37px;
+  }
+
+  .description {
+    color: #000;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container-player {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-player .header {
+    margin-left: 17px;
+  }
+
+  .container-player .image {
+    max-width: 302px;
+    margin: 11px 0px 17px;
+    z-index: 99;
+  }
+}
